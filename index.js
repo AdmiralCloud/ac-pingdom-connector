@@ -21,7 +21,6 @@ const pingdomConnector = () => {
     let ifaces = os.networkInterfaces()
     let eth = ifaces['en0'] || ifaces['eth0']
     if (eth) ip = _.find(eth, { family: 'IPv4' }) && _.find(eth, { family: 'IPv4' }).address
-    console.log(ip)
     http.createServer((req, res) => {
       res.writeHead(200, { 'Content-Type': 'text/plain' })
       res.end('I am alive\n')
