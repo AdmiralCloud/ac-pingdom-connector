@@ -1,0 +1,9 @@
+{
+  "name": "ac-pingdom-connector",
+  "description": "Pingdom connector to allow alive checks ",
+  "version": "0.0.1",
+  "author": "Mark Poepping <mark.poepping@mmpro.de>",
+  "dependencies": {
+    "lodash": "^4.17.13"
+  }
+}
